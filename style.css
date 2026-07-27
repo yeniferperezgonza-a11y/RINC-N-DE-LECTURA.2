@@ -1,0 +1,478 @@
+/*=============================
+    IMPORTAR FUENTE
+=============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=============================
+        GENERAL
+=============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7f6;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/*=============================
+        HEADER
+=============================*/
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#2E8B57;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2E8B57;
+}
+
+/*=============================
+        HERO
+=============================*/
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("imagenes/fondo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:120px 8%;
+}
+
+.hero-contenido{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+/*=============================
+        BOTONES
+=============================*/
+
+.botones{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn1,
+.btn2{
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.btn1{
+
+    background:#2E8B57;
+
+    color:white;
+
+}
+
+.btn1:hover{
+
+    background:#246f46;
+
+    transform:translateY(-5px);
+
+}
+
+.btn2{
+
+    background:white;
+
+    color:#2E8B57;
+
+}
+
+.btn2:hover{
+
+    background:#ececec;
+
+    transform:translateY(-5px);
+
+}
+
+/*=============================
+        LIBRO
+=============================*/
+
+.libro{
+
+    padding:100px 8%;
+
+}
+
+.libro h2{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    color:#2E8B57;
+
+    font-size:38px;
+
+}
+
+.contenedor-libro{
+
+    display:flex;
+
+    gap:50px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.imagen-libro img{
+
+    width:320px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+    transition:.4s;
+
+}
+
+.imagen-libro img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.informacion-libro{
+
+    max-width:600px;
+
+}
+
+.informacion-libro h3{
+
+    font-size:40px;
+
+    color:#2E8B57;
+
+}
+
+.informacion-libro h4{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+}
+
+.informacion-libro p{
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+/*=============================
+        DATOS
+=============================*/
+
+.datos{
+
+    background:#eef8f1;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin:25px 0;
+
+}
+
+.datos p{
+
+    margin:10px 0;
+
+}
+
+/*=============================
+        ACCIONES
+=============================*/
+
+.acciones{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.leer,
+.descargar{
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.leer{
+
+    background:#2E8B57;
+
+    color:white;
+
+}
+
+.leer:hover{
+
+    background:#246f46;
+
+}
+
+.descargar{
+
+    border:2px solid #2E8B57;
+
+    color:#2E8B57;
+
+}
+
+.descargar:hover{
+
+    background:#2E8B57;
+
+    color:white;
+
+}
+
+/*=============================
+        AUTOR
+=============================*/
+
+.autor{
+
+    background:white;
+
+    padding:100px 8%;
+
+}
+
+.autor h2{
+
+    text-align:center;
+
+    color:#2E8B57;
+
+    font-size:38px;
+
+    margin-bottom:60px;
+
+}
+
+.contenedor-autor{
+
+    display:flex;
+
+    gap:50px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.contenedor-autor img{
+
+    width:280px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.contenedor-autor div{
+
+    max-width:650px;
+
+}
+
+.contenedor-autor h3{
+
+    margin-bottom:20px;
+
+    color:#2E8B57;
+
+    font-size:32px;
+
+}
+
+.contenedor-autor p{
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+}
+
+/*=============================
+        FRASE
+=============================*/
+
+.frase{
+
+    background:#2E8B57;
+
+    color:white;
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+.frase h2{
+
+    font-size:34px;
+
+    font-style:italic;
+
+    font-weight:500;
+
+}
+
+
+
+/*=============================
+        RESPONSIVE
+=============================*/
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+nav{
+
+    margin-top:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.libro h2,
+.autor h2{
+
+    font-size:30px;
+
+}
+
+.imagen-libro img{
+
+    width:250px;
+
+}
+
+}
